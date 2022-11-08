@@ -1,0 +1,149 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.wrap {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+h1.title {
+    font-weight: 800;
+    font-size: 88px;
+    line-height: 96px;
+    font-feature-settings: 'tnum'on, 'lnum'on;
+    color: #FFFFFF;
+}
+
+h2.title {
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 88px;
+    font-feature-settings: 'tnum'on, 'lnum'on;
+    color: #FFFFFF;
+}
+
+h3.title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    font-feature-settings: 'tnum'on, 'lnum'on;
+    color: #FFFFFF;
+}
+
+h4.text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    font-feature-settings: 'tnum'on, 'lnum'on;
+    color: #FFFFFF;
+}
+
+h5.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'tnum'on, 'lnum'on;
+    color: #CECED0;
+}
+
+html {
+    overflow-x: hidden;
+    background: linear-gradient(199.12deg, #2C1219 23.05%, #230D13 30.46%, #0B0B14 47.52%, #0B0B14 68.5%, #3A1821 87.13%);
+}
+
+body {
+    /*   height: 100vh;
+    width: 100vw; */
+    overflow-x: hidden;
+    position: relative;
+    background: linear-gradient(199.12deg, #2C1219 23.05%, #230D13 30.46%, #0B0B14 47.52%, #0B0B14 68.5%, #3A1821 87.13%);
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/image/careers-bg.png);
+    z-index: 0;
+}
+
+.anim {
+    opacity: 0;
+    transition: all 0.1s;
+
+    &.fade-bottom {
+        &.show {
+            opacity: 1;
+            -webkit-animation: title 0.5s ease-out both;
+            animation: title 0.5s ease-out both;
+        }
+    }
+
+    &.fade-right {
+        &.show {
+            opacity: 1;
+            -webkit-animation: fade-in-right 0.5s ease-out both;
+            animation: fade-in-right 0.5s ease-out both;
+        }
+
+    }
+
+    &.slide-in-fwd {
+        transform: scale(0);
+        opacity: 0;
+        transition: all 0.5s ease;
+
+        &.show {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+    }
+}
+
+.btn {
+    width: 168px;
+    height: 64px;
+    padding: 0px 24px;
+    background: #E44C65;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    transition: all 0.4s ease;
+    color: #FFFFFF;
+
+    svg {
+        margin-left: 12px;
+        margin-bottom: -2.5px;
+    }
+
+    &:hover {
+        background: #903040;
+        color: #FFFFFF;
+        text-decoration: none !important;
+    }
+}
+
+@import './blocks/keyframes';
+@import './blocks/header';
+@import './blocks/hero';
+@import './blocks/promo';
+@import './blocks/about';
+@import './blocks/history';
+@import './blocks/game';
+@import './blocks/team';
+@import './blocks/careers';
+@import './blocks/news';
+@import './blocks/footer';
+@import './blocks/article';
+@import './blocks/content';
+@import './blocks/career';
+@import './blocks/law';
+@import './blocks/media';

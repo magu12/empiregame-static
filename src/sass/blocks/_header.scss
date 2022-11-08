@@ -1,0 +1,48 @@
+.header {
+    background: linear-gradient(180deg, rgba(11, 11, 20, 0.8) 0%, rgba(11, 11, 20, 0) 100%);
+    padding: 16px 0;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .logo {
+        width: 57px;
+        img {
+            width: 100%;
+        }
+    }
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        li {
+            list-style: none;
+            margin-right: 56px;
+
+            a {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                font-feature-settings: 'tnum'on, 'lnum'on;
+                color: #CECED0;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: #FFFFFF;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
